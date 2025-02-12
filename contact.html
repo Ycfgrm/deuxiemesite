@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Voyage Aérien</title>
+    <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo-voyage-detaille_23-2148616611-removebg-preview.png" width="100" alt="Logo Voyage Aérien">
+            </div>
+            <ul class="menu-principal">
+                <li class="menu-item"><a href="index.html">Accueil</a></li>
+                <li class="menu-item"><a href="nos-destinations.html">Destinations</a></li>
+                <li class="menu-item"><a href="">Expérience de vol</a></li>
+                <li class="menu-item"><a href="">Programme de fidélité</a></li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-hero">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes là pour répondre à toutes vos questions</p>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sujet">Sujet</label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">Choisissez un sujet</option>
+                            <option value="reservation">Réservation</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+        <div id="confirmationMessage" class="confirmation-message hidden">
+            <p>Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.</p>
+        </div>
+    </main>
+    <footer class="botbar">
+        <div class="service">
+            <h2>Service client</h2>
+            <br>
+            <p>Whatsapp France: <br>+33 1 40 17 47 00.</p>
+            <br>
+            <p>Magasins et commandes en ligne du lundi au samedi 10h - 19h :
+                <br>
+                +33 (0)1 40 17 47 00
+            </p>
+            <br>
+            <p>Pour les demandes d’information au Siège, contactez notre Standard général du lundi au vendredi 8h30 -
+                18h :
+                <br>
+                +33 (0)1 40 17 47 17
+            </p>
+            <br>
+            <p>Envoyer un e-mail</p>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <br>
+            <p>Recevez notre newsletter et découvrez nos histoires, nos collections et nos surprises.</p>
+            <br>
+            <button class="newsletter" onclick="newsletter()">S'inscrire</button>
+        </div>
+        <div class="reseau">
+            <div class="logo">
+                <h2>Follow us</h2>
+                <br>
+                <a href=""><img class="xlogo" src="img/" alt=""></a>
+                <a href=""><img class="instalogo" src="img/Instagram-Logo-Download-Free-Vector-PNG-removebg-preview.png" alt=""></a>
+                <a href=""><img class="fblogo" src="img/png-clipart-computer-icons-logo-facebook-inc-facebook-rectangle-logo-removebg-preview.png" alt=""></a>
+                <a href=""><img class="ytlogo" src="img/Youtube_logo-removebg-preview.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage Aérien</title>
+    <link rel="stylesheet" href="pageaccueil.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Sup2voyage</h1>
+                <img src="img/logo-voyage-detaille_23-2148616611-removebg-preview.png" width="100" alt="Logo Voyage Aérien">
+            </div>
+            <ul class="menu-principal">
+                <li class="menu-item"><a href="">Accueil</a></li>
+                <li class="menu-item"><a href="nos-destinations.html">Destinations</a></li>
+                <li class="menu-item"><a href="">Expérience de vol</a></li>
+                <li class="menu-item"><a href="">Programme de fidélité</a></li>
+                <li class="menu-item"><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titre">
+            <div class="titre-gros">
+                <h1>Découvrez le monde avec style</h1>
+                <p>Voyagez vers des destinations de rêve avec un confort inégalé</p>
+            </div>
+            <div class="search-overlay">
+                <h2>Réservez votre vol</h2>
+                <form action="reservation.html" method="get" class="search-form">
+                    <div class="form-group">
+                        <label for="depart">Départ</label>
+                        <input type="text" id="depart" name="depart" placeholder="Ville de départ" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrivee">Arrivée</label>
+                        <input type="text" id="arrivee" name="arrivee" placeholder="Ville d'arrivée" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-aller">Date aller</label>
+                        <input type="date" id="date-aller" name="date-aller" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-retour">Date retour</label>
+                        <input type="date" id="date-retour" name="date-retour">
+                    </div>
+                    <button type="submit" class="btn-primary">Rechercher</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="destinations-populaires">
+            <h2>Destinations populaires</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="img/france-eiffel-tower-paris.jpg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>À partir de 199€</p>
+                </div>
+                <div class="destination-card">
+                    <img src="img/Pura-Ulun-Danu-Bratan-Bali-Indonesie.jpg" alt="Bali">
+                    <h3>Bali</h3>
+                    <p>À partir de 599€</p>
+                </div>
+                <div class="destination-card">
+                    <img src="img/NYC-Underrated-Parks-HERO.jpg" alt="New York">
+                    <h3>New York</h3>
+                    <p>À partir de 449€</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="offres-speciales">
+            <h2>Offres spéciales</h2>
+            <div class="offres-grid">
+                <div class="offre-card">
+                    <h3>Vols + Hôtel</h3>
+                    <p>Économisez jusqu'à 30% sur nos forfaits</p>
+                    <a href="" class="btn-secondary">En savoir plus</a>
+                </div>
+                <div class="offre-card">
+                    <h3>Classe Affaires</h3>
+                    <p>Surclassement à -50% sur certains vols</p>
+                    <a href="" class="btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="inspiration-voyage">
+            <h2>Inspirations de voyage</h2>
+            <div class="inspiration-grid">
+                <article class="inspiration-card">
+                    <img src="img/plage-paradisiaque-image.webp" alt="Plage tropicale">
+                    <h3>Les plus belles plages du monde</h3>
+                    <p>Découvrez notre sélection des plages paradisiaques</p>
+                    <a href="#" class="btn-text">Lire l'article</a>
+                </article>
+                <article class="inspiration-card">
+                    <img src="img/8aca7a623da6c8128b72bb3a3b1209dab28b80d25c8ffd296259a7a2908ea47d.webp" alt="Ville culturelle">
+                    <h3>Escapades culturelles</h3>
+                    <p>Explorez les villes riches en histoire et en art</p>
+                    <a href="#" class="btn-text">Lire l'article</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="programme-fidelite">
+            <h2>Rejoignez notre programme de fidélité</h2>
+            <p>Gagnez des miles à chaque vol et profitez d'avantages exclusifs</p>
+            <a href="" class="btn-primary">S'inscrire maintenant</a>
+        </section>
+    </main>
+    <footer class="botbar">
+        <div class="service">
+            <h2>Service client</h2>
+            <br>
+            <p>Whatsapp France: <br>+33 1 40 17 47 00.</p>
+            <br>
+            <p>Magasins et commandes en ligne du lundi au samedi 10h - 19h :
+                <br>
+                +33 (0)1 40 17 47 00
+            </p>
+            <br>
+            <p>Pour les demandes d’information au Siège, contactez notre Standard général du lundi au vendredi 8h30 -
+                18h :
+                <br>
+                +33 (0)1 40 17 47 17
+            </p>
+            <br>
+            <p>Envoyer un e-mail</p>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <br>
+            <p>Recevez notre newsletter et découvrez nos histoires, nos collections et nos surprises.</p>
+            <br>
+            <button class="newsletter" onclick="newsletter()">S'inscrire</button>
+        </div>
+        <div class="reseau">
+            <div class="logo">
+                <h2>Follow us</h2>
+                <br>
+                <a href=""><img class="xlogo" src="img/nouveau-vecteur-du-logo-twitter-x_768467-92.avif" alt=""></a>
+                <a href=""><img class="instalogo" src="img/Instagram-Logo-Download-Free-Vector-PNG-removebg-preview.png" alt=""></a>
+                <a href=""><img class="fblogo" src="img/png-clipart-computer-icons-logo-facebook-inc-facebook-rectangle-logo-removebg-preview.png" alt=""></a>
+                <a href=""><img class="ytlogo" src="img/Youtube_logo-removebg-preview.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script1.js"></script>
+</body>
+</html>
+
